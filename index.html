@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/style.css" />
   
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   
 </head>
 <body>
@@ -18,12 +17,18 @@
       
       <h1>Your Result</h1>
       
-      <div>76
-      of 100 </div>
+      <div class="round">
+        <!-- <div class="score"> -->
+          <p id="score">76</p>
+          <p id="base">of 100</p>
+        <!-- </div> -->
+          
+      </div>
+      
 
-      <div>
-        <p>Great</p>
-        <p>You scored higher than 65% of the people who have taken these tests! </p>
+      <div class="feedback">
+        <p id="short">Great</p>
+        <p id="details">You scored higher than 65% of the people who have taken these tests!</p>
       </div>
 
     </div>
