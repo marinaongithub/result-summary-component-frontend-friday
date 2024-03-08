@@ -12,12 +12,19 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    width: 736px;
+    height: 512px;
+    border-radius: 32px
 }
+
+/* RESULTS SIDE */
 
 .results {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     align-items: center;
     background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
     border-radius: 32px; 
@@ -72,11 +79,12 @@ h1 {
 }
 
 #short {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 700;
     /* line-height: 23px; */
     text-align: center;
     color: white;
+    margin: 0px;
 }
 
 #details {
@@ -86,6 +94,100 @@ h1 {
     /* letter-spacing: 0px; */
     text-align: center;
     color: var(--lavande);
+}
+
+/* SUMMARY SIDE */
+
+.summary {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 512px;
+    width: 368px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    /* line-height: 31px; */
+    text-align: left;
+    color: hsl(224, 30%, 27%);
+    margin: 40px 0px 30px 40px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 272px;
+    justify-content: space-evenly;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 12px;
+    height: 56px;
+    width: 288px;
+}
+
+/* p {
+    margin-left: 10px; 
+} */
+
+.num {
+    font-weight: 700;
+}
+
+span {
+    color: hsla(223, 30%, 27%, 0.5);
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+#red {
+    color: hsl(0, 100%, 67%);
+    font-weight: 500;
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.05) 
+}
+
+#yellow {
+    color: hsl(39, 100%, 56%);
+    font-weight: 500;
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+#green {
+    color: hsl(166, 100%, 37%);
+    font-weight: 500;
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+#blue {
+    color: hsl(234, 85%, 45%);
+    font-weight: 500;
+}
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    width: 288px;
+    height: 56px;
+    border-radius: 128px;
+    margin: 38px auto;
+    color: white;
+    size: 18px;
+    font-weight: 700;
 }
 
 
