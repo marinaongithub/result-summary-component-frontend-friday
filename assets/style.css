@@ -218,7 +218,9 @@ button:hover {
     }
     .results {
         height: 356px;
+        border-radius: 0px 0px 32px 32px;
     }
+
     h1 {
         font-size: 18px;
         margin: 25px;
