@@ -135,19 +135,20 @@ h2 {
 
 .item {
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-evenly;
     border-radius: 12px;
     height: 56px;
     width: 288px;
 }
 
-img {
-    margin: 2px 5px 0px 10px; 
-}
-
 .num {
     font-weight: 700;
-    margin-left: 105px;
+}
+
+.name {
+    flex-grow: 0.5;
+    text-align: left;
+    font-weight: 500;
 }
 
 span {
@@ -161,7 +162,6 @@ span {
 
 #red {
     color: hsl(0, 100%, 67%);
-    font-weight: 500;
 }
 
 .memory {
@@ -170,7 +170,6 @@ span {
 
 #yellow {
     color: hsl(39, 100%, 56%);
-    font-weight: 500;
 }
 
 .verbal {
@@ -179,7 +178,6 @@ span {
 
 #green {
     color: hsl(166, 100%, 37%);
-    font-weight: 500;
 }
 
 .visual {
@@ -188,7 +186,6 @@ span {
 
 #blue {
     color: hsl(234, 85%, 45%);
-    font-weight: 500;
 }
 
 button {
