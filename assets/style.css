@@ -135,18 +135,24 @@ h2 {
 
 .item {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border-radius: 12px;
     height: 56px;
     width: 288px;
 }
 
+img {
+    margin: 2px 5px 0px 10px; 
+}
+
 .num {
     font-weight: 700;
+    margin-left: 105px;
 }
 
 span {
     color: hsla(223, 30%, 27%, 0.5);
+
 }
 
 .reaction {
