@@ -47,7 +47,6 @@ body {
 h1 {
     font-size: 24px;
     font-weight: 700;
-    /* line-height: 31px; */
     text-align: center;
     color: var(--lavande);
     margin: 40px 0;
@@ -92,7 +91,6 @@ h1 {
 #short {
     font-size: 32px;
     font-weight: 700;
-    /* line-height: 23px; */
     text-align: center;
     color: white;
     margin: 0px;
@@ -101,7 +99,7 @@ h1 {
 #details {
     font-size: 18px;
     font-weight: 500;
-    line-height: 23px;
+    /* line-height: 23px; */
     /* letter-spacing: 0px; */
     text-align: center;
     color: var(--lavande);
@@ -211,3 +209,45 @@ button:hover {
 .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0; width: 100%; margin-bottom: 5px; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (max-width: 753px) {
+
+    .component {
+        margin: 0px;
+    }
+    .results {
+        height: 356px;
+    }
+    h1 {
+        font-size: 18px;
+        margin: 25px;
+    }
+    .round {
+        width: 140px;
+        height: 140px;
+    }
+
+    #score {
+        font-size: 56px;
+    }
+
+    #base {
+        font-size: 16px;
+    }
+
+    .feedback {
+        width: 260px;
+        height: 81px;
+        margin: 25px 0px;
+    }
+
+    #short {
+        font-size: 24px;
+    }
+
+    #details {
+        font-size: 16px;
+
+    }
+}
