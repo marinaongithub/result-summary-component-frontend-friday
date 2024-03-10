@@ -221,6 +221,8 @@ button:hover {
 
     .component {
         margin: 0px;
+        border-radius: 0px;
+
     }
 
     .results {
@@ -266,7 +268,7 @@ button:hover {
 
     h2 {
         font-size: 18px;
-        margin: 20px 0px 15px 45px;
+        margin: 20px 0px 15px 70px;
     }
 
     .list {
@@ -278,6 +280,6 @@ button:hover {
     }
 
     .attribution {
-        padding-bottom: 5px;
+        display: none;
     }
 }
