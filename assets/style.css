@@ -222,6 +222,10 @@ button:hover {
 
 @media only screen and (max-width: 735px) {
 
+    html, body {
+        background-color: hsla(220, 100%, 96%, 1);
+    }
+
     .component {
         margin: 0px;
         border-radius: 0px;
