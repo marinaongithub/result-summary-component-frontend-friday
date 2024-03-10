@@ -11,7 +11,7 @@
   
 </head>
 <body>
-  <!-- <div class="container"> -->
+
     <div class="component">
       <div class="results">
         
@@ -24,7 +24,7 @@
 
         <div class="feedback">
           <p id="short">Great</p>
-          <p id="details">You scored higher than 65% of the people who have taken these tests!</p>
+          <p id="details">You scored higher than 65% of the people who have taken these tests.</p>
         </div>
 
       </div>
@@ -35,37 +35,53 @@
         
         <div class="list">
           <div class="item reaction">
-            <img src="./assets/images/icon-reaction.svg" alt="lighting icon"><p class="name" id="red">Reaction</p>
-            <p class="num">80 <span>/ 100</span></p>
+            <img src="./assets/images/icon-reaction.svg" alt="lighting icon"><p class="name" id="red"></p>
+            <p class="num"><span class="hundred">/ 100</span></p>
           </div>
           <div class="item memory">
             <img src="./assets/images/icon-memory.svg" alt="brain icon"><p class="name" id="yellow">Memory</p>
-            <p class="num"> 92 <span>/ 100</span></p>
+            <p class="num"><span class="hundred">/ 100</span></p>
           </div>
           <div class="item verbal">
             <img src="./assets/images/icon-verbal.svg" alt="speech bubble icon"><p class="name" id="green">Verbal</p>
-            <p class="num"> 61 <span>/ 100</span></p>
+            <p class="num"><span>/ 100</span></p>
           </div>
           <div class="item visual">
             <img src="./assets/images/icon-visual.svg" alt="eye icon"><p class="name" id="blue">Visual</p> 
-            <p class="num"> 72 <span>/ 100</span></p>
+            <p class="num"><span>/ 100</span></p>
           </div>
         </div>  
 
         <button>Continue</button>
         
       </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Marina</a>.
+      </div>
       
-    <!-- </div> -->
+      <!-- <script>
+        fetch('data.json')
+              .then(response => response.json())
+              .then(data => {
+                  document.getElementById('red').textContent = data[0].category;
+                  document.querySelector('.item.reaction .num').textContent = data[0].score;
+                  document.getElementById('yellow').textContent = data[1].category;
+                  document.querySelector('.item.memory .num').textContent = data[1].score;
+                  document.getElementById('green').textContent = data[2].category;
+                  document.querySelector('.item.visual .num').textContent = data[2].score;
+                  document.getElementById('blue').textContent = data[3].category;
+                  document.querySelector('.item.verbal .num').textContent = data[3].score;
+                  document.querySelector('.item.memory .num .hundred').innerHTML = "100";
 
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Marina</a>.
-    </div>
-
-  <!-- </div> -->
-
-
+              })
+              .catch(error => {
+                  console.error('Error fetching data:', error);
+              });
+      </script> -->
  
 </body>
 </html>
+
+

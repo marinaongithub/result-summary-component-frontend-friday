@@ -4,8 +4,11 @@
   }
 
 
+
+
 html, body {
     --lavande:  hsl(241, 100%, 89%);
+    -webkit-text-size-adjust: 100%;
     font-family: "Hanken Grotesk", sans-serif;
     text-align: center;
     background-color: hsla(220, 100%, 96%, 1);
@@ -157,7 +160,7 @@ h2 {
     font-weight: 500;
 }
 
-span {
+.hundred {
     color: hsla(223, 30%, 27%, 0.5);
 
 }
@@ -268,7 +271,7 @@ button:hover {
 
     h2 {
         font-size: 18px;
-        margin: 20px 0px 15px 70px;
+        margin: 32px 0px 20px 70px;
     }
 
     .list {
@@ -276,7 +279,7 @@ button:hover {
     }
 
     button {
-        margin: 20px auto;
+        margin: 25px auto;
     }
 
     .attribution {
