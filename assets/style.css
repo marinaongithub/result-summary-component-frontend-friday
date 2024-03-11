@@ -2,9 +2,7 @@
     font-family: 'Hanken Grotesk';
     src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
   }
-
-
-
+  
 
 html, body {
     --lavande:  hsl(241, 100%, 89%);
@@ -13,7 +11,6 @@ html, body {
     text-align: center;
     background-color: hsla(220, 100%, 96%, 1);
     display: flex;
-    /* flex-wrap: wrap; */
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -22,23 +19,22 @@ html, body {
 
 .container {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
+
     width: 100%;
-    /* height: 95vh; */
+
 }
 
 .component {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* width: 736px; */
-    /* height: 512px; */
+
     border-radius: 32px;
     margin: auto;
     background-color: white;
 
 }
+
 
 /* RESULTS SIDE */
 
@@ -47,7 +43,7 @@ html, body {
     flex-direction: column;
     flex-grow: 1;
     align-items: center;
-    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 32px; 
     width: 368px;
     height: 512px;
@@ -67,16 +63,16 @@ h1 {
     flex-direction: column;
     justify-content: center;
     border-radius: 50%;
-    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     text-align: center;
     width: 200px;
     height: 200px;
 }
 
-#score {
+#total {
     font-size: 72px;
     font-weight: 800;
-    /* line-height: 72px; */
+
     text-align: center;
     color: white;
     margin: 0;
@@ -85,7 +81,6 @@ h1 {
 #base {
     font-size: 18px;
     font-weight: 700;
-    /* line-height: 23px; */
     text-align: center;
     color: var(--lavande);
     margin: 0;
@@ -108,11 +103,10 @@ h1 {
 #details {
     font-size: 18px;
     font-weight: 500;
-    /* line-height: 23px; */
-    /* letter-spacing: 0px; */
     text-align: center;
     color: var(--lavande);
 }
+
 
 /* SUMMARY SIDE */
 
@@ -127,7 +121,6 @@ h1 {
 h2 {
     font-size: 24px;
     font-weight: 700;
-    /* line-height: 31px; */
     text-align: left;
     color: hsl(224, 30%, 27%);
     margin: 40px 0px 30px 40px;
@@ -145,13 +138,17 @@ h2 {
 .item {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     border-radius: 12px;
     height: 56px;
     width: 288px;
+    
 }
 
-.num {
+.score {
+    display: flex;
     font-weight: 700;
+    margin: auto 0px;
 }
 
 .name {
@@ -162,10 +159,11 @@ h2 {
 
 .hundred {
     color: hsla(223, 30%, 27%, 0.5);
+    margin-left: 10px;
 
 }
 
-.reaction {
+#reaction {
     background-color: hsla(0, 100%, 67%, 0.05);
 }
 
@@ -173,7 +171,7 @@ h2 {
     color: hsl(0, 100%, 67%);
 }
 
-.memory {
+#memory {
     background-color: hsla(39, 100%, 56%, 0.05) 
 }
 
@@ -181,7 +179,7 @@ h2 {
     color: hsl(39, 100%, 56%);
 }
 
-.verbal {
+#verbal {
     background-color: hsla(166, 100%, 37%, 0.05);
 }
 
@@ -189,7 +187,7 @@ h2 {
     color: hsl(166, 100%, 37%);
 }
 
-.visual {
+#visual {
     background-color: hsla(234, 85%, 45%, 0.05);
 }
 
@@ -215,10 +213,14 @@ button:hover {
 }
 
 
+/* ATTRIBUTION */
+
 .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0; left:0; width: 100%; margin-bottom: 5px; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
 
+
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 735px) {
 
