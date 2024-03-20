@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/style.css" />
+  <link rel="stylesheet" href="./assets/style.css">
   
   <title>Frontend Mentor | Results summary component</title>
   
@@ -37,28 +37,28 @@
         <h2>Summary</h2>
         <div class="list">
           <div class="item" id="reaction">
-            <img src="./assets/images/icon-reaction.svg" alt="lighting icon" width="20px" height="20px"><div class="name" id="red"></div>
+            <img src="./assets/images/icon-reaction.svg" alt="lighting icon" width="20" height="20"><div class="name" id="red"></div>
             <div class="score">
               <div class="num"></div> 
               <div class="hundred">/ 100</div>
             </div>
           </div>
           <div class="item" id="memory">
-            <img src="./assets/images/icon-memory.svg" alt="brain icon" width="20px" height="20px"><div class="name" id="yellow"></div>
+            <img src="./assets/images/icon-memory.svg" alt="brain icon" width="20" height="20"><div class="name" id="yellow"></div>
             <div class="score">
               <div class="num"></div> 
               <div class="hundred">/ 100</div>
             </div>
           </div>
           <div class="item" id="verbal">
-            <img src="./assets/images/icon-verbal.svg" alt="speech bubble icon" width="20px" height="20px"><div class="name" id="green"></div>
+            <img src="./assets/images/icon-verbal.svg" alt="speech bubble icon" width="20" height="20"><div class="name" id="green"></div>
             <div class="score">
               <div class="num"></div> 
               <div class="hundred">/ 100</div>
             </div>
           </div>
           <div class="item" id="visual">
-            <img src="./assets/images/icon-visual.svg" alt="eye icon" width="20px" height="56px"><div class="name" id="blue"></div> 
+            <img src="./assets/images/icon-visual.svg" alt="eye icon" width="20" height="20"><div class="name" id="blue"></div> 
             <div class="score">
               <div class="num"></div> 
               <div class="hundred">/ 100</div>
@@ -76,6 +76,8 @@
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Marina</a>.
       </div>
+
+    </div> 
       
       <script>
         fetch('data.json')
@@ -94,7 +96,6 @@
                   console.error('Error fetching data:', error);
               });
       </script>
- 
 </body>
 </html>
 
